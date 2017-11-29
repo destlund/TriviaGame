@@ -49,7 +49,9 @@ function submit() {
     if (answer1 == won1 && answer2 == won2 && answer3 == won3) {
         $('#content').html('<h1 id="welcome" class="panel-header">Congratulations! You are a Gremlins expert!</h1>');
     } else if (answer1 != won1 && answer2 != won2 && answer3 != won3) {
+        $('#plush').html('<img alt="Stripe hates you" src="assets/images/stripe.jpg"></img>');
         $('#content').append('<h1 id="welcome" class="panel-header">That was real bad. Watch the movie and we can talk.</h1>');
+        console.log('changed gizmo')
     } else {
         $('#content').append('<h3 class="panel-header">You guessed ' + correct.length + ' correctly and ' + (3 - correct.length) + ' incorrectly.</h3>')
         if (answer1 != won1) {
