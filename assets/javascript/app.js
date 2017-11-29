@@ -87,7 +87,6 @@ function decrement() {
     // Once the number hits zero
     if (number === 0) {
         gameOver();
-        alert("Time up!");
     }
 }
 
